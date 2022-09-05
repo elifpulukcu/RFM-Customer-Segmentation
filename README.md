@@ -30,9 +30,9 @@
 
 ## **Dosyalar**
 
-*data/online_retail_II.xlsx* - [Veri Seti](https://github.com/elifpulukcu/RFM-Customer-Segmentation/blob/main/data/online_retail_II.xlsx)
+*data/online_retail_II.xlsx* - [Veri Seti](https://github.com/elifpulukcu/RFM-Customer-Segmentation/tree/master/data)
 
-*RFM.ipynb* - [Proje Dosyası](https://github.com/elifpulukcu/RFM-Customer-Segmentation/blob/main/RFM.ipynb)
+*RFM.ipynb* - [Proje Dosyası](https://github.com/elifpulukcu/RFM-Customer-Segmentation/blob/master/RFM.ipynb)
 
 ## **Kullanılan Kütüphaneler**
 
