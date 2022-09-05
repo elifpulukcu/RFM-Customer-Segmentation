@@ -1,6 +1,7 @@
 # RFM Analizi & Müşteri Segmentasyonu
 
-<img src="https://miro.medium.com/max/1190/1*SMx8ZNSq5ZLZSPh2u_peSw.png" width="800" align="right">
+<a href="https://www.github.com/elifpulukcu">
+    <img src="https://miro.medium.com/max/1190/1*SMx8ZNSq5ZLZSPh2u_peSw.png" width="800" align="center"></a>
 
 ## **İş Problemi** 
 > **Problem:** Bir e-ticaret şirketi müşterilerini segmentlere ayırıp bu segmentlere göre pazarlama stratejileri belirlemek istiyor.
