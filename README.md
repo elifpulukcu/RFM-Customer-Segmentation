@@ -1,50 +1,97 @@
-# RFM Analizi & Müşteri Segmentasyonu
+# RFM Customer Segmentation
+
+This project utilizes RFM (Recency, Frequency, Monetary) analysis to segment customers based on their purchasing behaviors, enabling targeted marketing strategies and improved customer relationship management.
 
 <a href="https://www.github.com/elifpulukcu">
     <img src="https://miro.medium.com/max/1190/1*SMx8ZNSq5ZLZSPh2u_peSw.png" width="800" align="center"></a>
 
-## **İş Problemi** 
-> **Problem:** Bir e-ticaret şirketi müşterilerini segmentlere ayırıp bu segmentlere göre pazarlama stratejileri belirlemek istiyor.
+## Project Overview
 
-- Şirket, ortak davranışlar sergileyen müşteri segmentleri özelinde pazarlama çalışmaları yapmanın gelir artışı sağlayacağını düşünmektedir.
-- Şirket için çok kazançlı olan müşterileri elde tutmak için farklı kampanyalar, yeni müşteriler için farklı kampanyalar düzenlenmek istenmektedir.
+RFM analysis is a marketing technique used to evaluate and segment customers based on their transaction history:
 
-## **Veri Seti Hikayesi**
+- **Recency (R):** How recently a customer made a purchase.
+- **Frequency (F):** How often a customer makes a purchase.
+- **Monetary (M):** How much money a customer has spent.
 
-> **Veri Seti:** https://archive.ics.uci.edu/ml/datasets/Online+Retail+II
+By scoring customers on these three factors, businesses can identify customer segments that are crucial for personalized marketing efforts.
 
-- Online Retail II isimli veri seti İngiltere merkezli online bir satış mağazasının 01/12/2009 - 09/12/2011 tarihleri arasındaki satışlarını içeriyor.
-- Bu şirketin ürün kataloğunda hediyelik eşyalar yer almaktadır.
-- Şirketin müşterilerinin büyük çoğunluğu kurumsal müşterilerdir.
+## Dataset
+
+The dataset used in this project is the [Online Retail II dataset](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II) from the UCI Machine Learning Repository. It contains transactions occurring between 01/12/2009 and 09/12/2011 for a UK-based online retail store.
+
+## Repository Contents
+
+- `RFM.ipynb`: Jupyter Notebook containing the implementation of RFM analysis and customer segmentation.
+- `data/`: Directory containing the dataset used for analysis.
+- `images/`: Directory containing visualizations generated during the analysis.
+- `README.md`: Project overview and instructions.
+
+## Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/elifpulukcu/RFM-Customer-Segmentation.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd RFM-Customer-Segmentation
+   ```
+
+3. **Run the Jupyter Notebook:**
+
+   ```bash
+   jupyter notebook RFM.ipynb
+   ```
+
+## Analysis Steps
+
+1. **Data Preprocessing:**
+
+   - Load the dataset.
+   - Handle missing values and duplicates.
+   - Convert data types as necessary.
+
+2. **RFM Metric Calculation:**
+
+   - Calculate Recency, Frequency, and Monetary values for each customer.
+
+3. **Customer Segmentation:**
+
+   - Assign RFM scores to each customer.
+   - Define customer segments based on RFM scores.
+
+4. **Data Visualization:**
+
+   - Generate visualizations to illustrate customer segments and insights.
+
+## Results
+
+The analysis segments customers into distinct groups, such as:
+
+- **Champions:** Recent, frequent, and high-spending customers.
+- **Loyal Customers:** Regular purchasers with moderate spending.
+- **At Risk Customers:** Customers who haven't purchased recently.
+
+These segments enable the development of targeted marketing strategies to enhance customer engagement and retention.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Acknowledgments
+
+- The dataset is sourced from the UCI Machine Learning Repository: [Online Retail II dataset](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II).
+- Inspiration for this project was drawn from various RFM analysis implementations and customer segmentation studies.
 
 
-## **Değişkenler**
 
-- InvoiceNo: Fatura numarası. Her işleme (faturaya) ait eşsiz numara. Eğer bu kod C ile başlıyorsa işlemin iptal edildiğini ifade eder.
-- StockCode: Ürün kodu. Her bir ürün için eşsiz numara.
-- Description: Ürün ismi
-- Quantity: Ürün adedi. Faturalardaki ürünlerden kaçar tane satıldığını ifade etmektedir.
-- InvoiceDate: Fatura tarihi ve zamanı.
-- UnitPrice: Ürün fiyatı (Sterlin cinsinden)
-- CustomerID: Eşsiz müşteri numarası
-- Country: Ülke ismi. Müşterinin yaşadığı ülke.
 
-## **Dosyalar**
 
-*data/online_retail_II.xlsx* - [Veri Seti](https://github.com/elifpulukcu/RFM-Customer-Segmentation/tree/master/data)
 
-*RFM.ipynb* - [Proje Dosyası](https://github.com/elifpulukcu/RFM-Customer-Segmentation/blob/master/RFM.ipynb)
-
-## **Kullanılan Kütüphaneler**
-
-```
-pandas
-numpy
-seaborn
-matplotlib
-datetime
-```
-
-## **Yazar**
-
-- Elif Pulukçu - [elifpulukcu](https://github.com/elifpulukcu)
