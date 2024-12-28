@@ -90,8 +90,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 - The dataset is sourced from the UCI Machine Learning Repository: [Online Retail II dataset](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II).
 - Inspiration for this project was drawn from various RFM analysis implementations and customer segmentation studies.
 
+## Author
 
-
+Developed by [Elif Pulukçu](https://github.com/elifpulukcu).
 
 
 
